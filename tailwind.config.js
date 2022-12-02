@@ -18,7 +18,13 @@ module.exports = {
         "2xl": "9rem",
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#6f2fab",
+        secondary: "#f76707",
+        "secondary-opacity": "rgba(247,103,7,.1)",
+      },
+    },
   },
   plugins: [],
 };

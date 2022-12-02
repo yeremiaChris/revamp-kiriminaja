@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white"></div>
+  <div>
+    <HomeCarousel />
+  </div>
 </template>
 
 <script>

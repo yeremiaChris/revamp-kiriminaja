@@ -10,6 +10,7 @@
 
       <!-- menu -->
       <ul class="flex items-center gap-9 font-medium">
+        <!-- menus -->
         <li v-for="item in menus" :key="item.title" class="hover:opacity-70">
           <NuxtLink :to="item.path">
             {{ item.title }}
@@ -71,13 +72,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.vertical-spacer {
-  margin: 1.25rem 1rem;
-  width: 2px;
-  height: calc(100% - 2.5rem);
-  background: currentColor;
-  opacity: 0.5;
-}
-</style>
