@@ -81,3 +81,7 @@ body {
 .owl-dots {
   @apply box-center pt-4;
 }
+
+.expedition .owl-stage {
+  @apply flex justify-between items-center gap-10 md:gap-[70px];
+}

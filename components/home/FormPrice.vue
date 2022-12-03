@@ -16,10 +16,10 @@
       </div>
       <button
         type="submit"
-        class="bg-primary text-white self-start flex items-center gap-2 md:ml-4 md:w-12 md:h-12 rounded-lg md:rounded px-4 md:px-2.5 py-2.5"
+        class="bg-primary text-white flex items-center gap-2 md:ml-4 md:h-12 rounded-lg md:rounded px-4 md:px-2.5 py-2.5"
       >
         <img src="/icon/search.svg" class="w-7" alt="search" />
-        <p>Cek Tarif</p>
+        <p class="md:hidden">Cek Tarif</p>
       </button>
     </form>
   </section>

@@ -5,6 +5,14 @@
 
     <!-- form to know the price of delivery -->
     <HomeFormPrice />
+
+    <!-- slider that contain list of mitra expedition -->
+    <HomeExpedition />
+
+    <!-- banner -->
+    <HomeBanner />
+
+    <HomeService />
   </div>
 </template>
 
