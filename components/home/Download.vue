@@ -27,6 +27,7 @@
             :key="item.icon + index"
             :href="item.link"
             target="_blank"
+            class="hover-animate"
           >
             <img
               class="h-[40px]"

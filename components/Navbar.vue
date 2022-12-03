@@ -5,11 +5,13 @@
   >
     <div class="container m-auto box-between py-5">
       <!-- logo -->
-      <img
-        src="https://kiriminaja.com/assets/atrust/svg-logo-primary.svg"
-        alt="logo"
-        width="145"
-      />
+      <NuxtLink to="/">
+        <img
+          src="https://kiriminaja.com/assets/atrust/svg-logo-primary.svg"
+          alt="logo"
+          width="145"
+        />
+      </NuxtLink>
 
       <!-- menu -->
       <ul class="hidden lg:flex items-center gap-9 font-medium">
@@ -25,8 +27,19 @@
           <div class="w-[2px] bg-black h-7" />
         </li>
 
+        <li class="flex">
+          <span class="px-8 py-px rounded-full bg-gray-200 inline-block"
+            >Light</span
+          >
+          <span
+            class="-ml-4 px-8 py-px rounded-full bg-primary text-white inline-block"
+          >
+            Dark
+          </span>
+        </li>
+
         <!-- action -->
-        <li>
+        <!-- <li>
           <NuxtLink to="#">Daftar</NuxtLink>
         </li>
         <li>
@@ -35,7 +48,7 @@
             class="py-3 px-5 bg-primary rounded-full hover:bg-[#5E2891] text-white"
             >Masuk</NuxtLink
           >
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -49,27 +62,11 @@ export default {
       menus: [
         {
           title: "Beranda",
-          path: "#",
-        },
-        {
-          title: "Blog",
-          path: "#",
+          path: "/",
         },
         {
           title: "Kabar",
-          path: "#",
-        },
-        {
-          title: "Layanan",
-          path: "#",
-        },
-        {
-          title: "Cek Ongkir",
-          path: "#",
-        },
-        {
-          title: "Lacak",
-          path: "#",
+          path: "/about",
         },
       ],
     };
@@ -87,3 +84,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+ul li .nuxt-link-active {
+  /* @apply shadow-2xl shadow-primary-opacity border-b-2; */
+}
+</style>
