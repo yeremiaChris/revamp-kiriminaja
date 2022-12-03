@@ -1,6 +1,6 @@
 <template>
   <div class="my-20 bg-[#F8F9FA]">
-    <div class="container m-auto py-24 grid grid-cols-2">
+    <div class="container m-auto py-24 grid lg:grid-cols-2">
       <div class="flex flex-col gap-4">
         <h2 class="text-4xl font-bold">
           Anda adalah kami <br />

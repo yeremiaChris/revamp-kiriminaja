@@ -2,7 +2,7 @@
   <div class="mb-10 container m-auto mt-5">
     <h2 class="text-3xl text-center font-bold mb-12">Our Teams</h2>
 
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
       <div v-for="item in 5" :key="item">
         <img
           class="rounded-lg"

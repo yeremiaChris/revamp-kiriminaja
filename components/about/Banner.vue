@@ -1,12 +1,14 @@
 <template>
-  <div class="mb-10 mt-20 text-center container m-auto">
-    <div class="mx-36">
-      <h1 class="text-[3.15rem] font-medium mb-5 leading-[3.4rem]">
+  <div class="mb-10 mt-5 lg:mt-20 lg:text-center container m-auto">
+    <div class="lg:mx-36">
+      <h1
+        class="text-4xl lg:text-[3.15rem] font-medium mb-5 lg:leading-[3.4rem]"
+      >
         <span class="text-primary">Memberi solusi teknologi</span> untuk
         kebutuhan supply chain yang mempermudah ekosistem bisnis Indonesia
         berkembang.
       </h1>
-      <p class="mb-14 text-2xl">
+      <p class="mb-7 lg:mb-14 text-lg lg:text-2xl">
         Pengiriman untuk UMKM, Pebisnis Online, dan seluruh masyarakat
         Indonesia.
       </p>
