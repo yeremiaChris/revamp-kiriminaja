@@ -5,7 +5,7 @@
 
     <!-- content -->
     <div
-      class="text-white bg-primary rounded-lg md:grid grid-cols-2 items-center md:first:px-16"
+      class="text-white bg-primary rounded-lg md:grid grid-cols-2 items-center md:px-16"
     >
       <!-- image -->
       <img
