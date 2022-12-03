@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <nav>
     <div class="container m-auto box-between py-5">
       <!-- logo -->
       <img
@@ -9,7 +9,7 @@
       />
 
       <!-- menu -->
-      <ul class="flex items-center gap-9 font-medium">
+      <ul class="hidden md:flex items-center gap-9 font-medium">
         <!-- menus -->
         <li v-for="item in menus" :key="item.title" class="hover:opacity-70">
           <NuxtLink :to="item.path">
@@ -35,7 +35,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>

@@ -1,6 +1,9 @@
 <template>
-  <div class="flex flex-col gap-3 items-start">
-    <span class="px-3 py-2 text-secondary rounded-full bg-secondary-opacity"
+  <div
+    class="mt-5 flex flex-col gap-3 md:items-start text-justify md:text-left"
+  >
+    <span
+      class="px-3 py-2 text-secondary rounded-full bg-secondary-opacity self-start"
       >#1 Info</span
     >
     <h2 class="text-[2.55rem] font-bold">November Untung Bener</h2>

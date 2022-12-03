@@ -79,5 +79,5 @@ body {
 }
 
 .owl-dots {
-  @apply box-center pt-6;
+  @apply box-center pt-4;
 }

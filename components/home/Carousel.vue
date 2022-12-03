@@ -1,14 +1,9 @@
 <template>
   <div>
     <client-only placeholder="Setup the carousel...">
-      <Carousel
-        :items="1"
-        :nav="false"
-        :autoplay="true"
-        :autoplay-timeout="3000"
-      >
-        <div
-          class="mt-16 px-20 flex gap-10 items-center"
+      <Carousel :items="1" :nav="false" :autoplay="true">
+        <header
+          class="mt-10 md:mt-16 md:px-20 md:flex gap-10 items-center"
           v-for="item in 3"
           :key="item"
         >
@@ -22,7 +17,7 @@
 
           <!-- content -->
           <HomeCarouselContent />
-        </div>
+        </header>
       </Carousel>
     </client-only>
   </div>

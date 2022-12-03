@@ -1,6 +1,10 @@
 <template>
   <div>
+    <!-- carousel -->
     <HomeCarousel />
+
+    <!-- form to know the price of delivery -->
+    <HomeFormPrice />
   </div>
 </template>
 

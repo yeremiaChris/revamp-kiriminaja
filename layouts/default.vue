@@ -3,7 +3,7 @@
     <Navbar />
     <Nuxt class="container m-auto" />
 
-    <!-- background gradient purple -->
+    <!-- back ground gradient purple -->
     <div class="background-gradient" />
   </div>
 </template>
