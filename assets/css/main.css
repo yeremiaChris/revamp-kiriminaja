@@ -85,3 +85,7 @@ body {
 .expedition .owl-stage {
   @apply flex justify-between items-center gap-10 md:gap-[70px];
 }
+
+button {
+  @apply transition ease-in-out hover:-translate-y-1 hover:scale-110;
+}

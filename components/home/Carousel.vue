@@ -3,7 +3,7 @@
     <client-only placeholder="Setup the carousel...">
       <Carousel :items="1" :nav="false" :autoplay="true">
         <header
-          class="mt-10 md:mt-16 md:px-20 md:flex gap-10 items-center"
+          class="mt-10 md:mt-16 md:px-14 md:flex gap-10 items-center"
           v-for="item in 3"
           :key="item"
         >

@@ -23,6 +23,7 @@ module.exports = {
         primary: "#6f2fab",
         secondary: "#f76707",
         "secondary-opacity": "rgba(247,103,7,.1)",
+        "primary-opacity": "rgba(111,47,171,.10)",
       },
     },
   },
