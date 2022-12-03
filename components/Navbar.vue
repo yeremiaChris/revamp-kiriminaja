@@ -1,5 +1,8 @@
 <template>
-  <nav>
+  <nav
+    class="sticky top-0 z-50 duration-300"
+    :class="{ 'shadow-lg bg-white': isScroll }"
+  >
     <div class="container m-auto box-between py-5">
       <!-- logo -->
       <img
@@ -42,6 +45,7 @@
 export default {
   data() {
     return {
+      isScroll: false,
       menus: [
         {
           title: "Beranda",
@@ -68,6 +72,17 @@ export default {
           path: "#",
         },
       ],
+    };
+  },
+
+  mounted() {
+    // handle onscroll
+    window.onscroll = (e) => {
+      if (window.scrollY > 0) {
+        this.isScroll = true;
+      } else {
+        this.isScroll = false;
+      }
     };
   },
 };
