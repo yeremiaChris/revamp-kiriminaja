@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-5 shadow py-6 px-5 text-sm">
+  <section class="mt-5 shadow border py-6 px-5 text-sm">
     <form class="flex flex-col md:flex-row md:items-center gap-2 flex-wrap">
       <div
         v-for="(field, index) in fields"

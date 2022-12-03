@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <header>
     <client-only placeholder="Setup the carousel...">
       <Carousel :items="1" :nav="false" :autoplay="true">
-        <header
+        <div
           class="mt-10 md:mt-16 md:px-14 md:flex gap-10 items-center"
           v-for="item in 3"
           :key="item"
@@ -17,10 +17,10 @@
 
           <!-- content -->
           <HomeCarouselContent />
-        </header>
+        </div>
       </Carousel>
     </client-only>
-  </div>
+  </header>
 </template>
 
 <script>

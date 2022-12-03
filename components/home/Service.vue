@@ -1,5 +1,5 @@
 <template>
-  <div class="my-20">
+  <section class="my-20">
     <!-- title -->
     <h2 class="text-center mb-14 text-3xl font-medium">
       Untuk Semua Kebutuhan Pengiriman Paketmu
@@ -9,5 +9,5 @@
       <!-- card -->
       <HomeServiceCard v-for="item in 3" :key="item" />
     </div>
-  </div>
+  </section>
 </template>

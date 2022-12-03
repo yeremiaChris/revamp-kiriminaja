@@ -19,7 +19,7 @@
       </li>
     </ul>
     <button
-      class="bg-primary rounded-full mt-6 md:mt-4 px-8 text-lg py-3 text-white font-medium"
+      class="bg-primary rounded-full mt-6 md:mt-0 px-8 text-lg py-3 text-white font-medium"
     >
       Selengkapnya
     </button>

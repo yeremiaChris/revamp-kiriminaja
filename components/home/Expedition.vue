@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12">
+  <section class="mt-12">
     <client-only placeholder="Setup the carousel...">
       <Carousel class="expedition" :responsive="responsive">
         <img
@@ -10,7 +10,7 @@
         />
       </Carousel>
     </client-only>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -17,6 +17,9 @@
 
     <!-- banner service -->
     <HomeBannerService />
+
+    <!-- download section-->
+    <HomeDownload />
   </div>
 </template>
 
