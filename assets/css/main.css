@@ -77,3 +77,7 @@ body {
 .vertical-spacer {
   height: calc(100% - 2.5rem);
 }
+
+.owl-dots {
+  @apply box-center pt-6;
+}
