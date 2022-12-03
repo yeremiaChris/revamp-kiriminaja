@@ -12,7 +12,11 @@
     <!-- banner -->
     <HomeBanner />
 
+    <!-- home service -->
     <HomeService />
+
+    <!-- banner service -->
+    <HomeBannerService />
   </div>
 </template>
 

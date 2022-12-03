@@ -14,9 +14,7 @@
     </p>
     <ul class="grid gap-4 font-medium">
       <li v-for="item in 3" :key="item" class="flex items-center gap-2">
-        <div class="bg-secondary rounded-full p-[3px]">
-          <img class="w-4" src="/icon/check.svg" alt="check" />
-        </div>
+        <MiscCheckList />
         Tanpa Biaya Pendaftaran
       </li>
     </ul>
