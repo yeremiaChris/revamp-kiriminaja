@@ -5,7 +5,7 @@
       Untuk Semua Kebutuhan Pengiriman Paketmu
     </h2>
 
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid lg:grid-cols-3 gap-6">
       <!-- card -->
       <HomeServiceCard v-for="item in 3" :key="item" />
     </div>

@@ -1,21 +1,21 @@
 <template>
   <section class="relative my-20">
     <!-- bg blur -->
-    <div class="image-section z-10 hidden md:block" />
+    <div class="image-section z-10 hidden lg:block" />
 
     <!-- content -->
     <div
-      class="text-white bg-primary rounded-lg md:grid grid-cols-2 items-center md:px-16"
+      class="text-white bg-primary rounded-lg lg:grid grid-cols-2 items-center lg:px-16"
     >
       <!-- image -->
       <img
-        class="z-40 md:h-[470px]"
+        class="z-40 lg:h-[470px]"
         src="https://kiriminaja.com/assets/home-2/call-to-action.png"
         alt="call-to-action"
       />
 
       <!-- content -->
-      <div class="p-8 md:p-10 z-40 grid gap-4">
+      <div class="p-8 lg:p-10 z-40 grid gap-4">
         <h2 class="text-4xl font-bold">Gratis daftar dalam hitungan detik</h2>
         <p class="text-gray-300">
           Semua bisa mulai kirim paket tanpa ribet. Jadikan pengalaman

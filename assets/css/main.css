@@ -83,7 +83,7 @@ body {
 }
 
 .expedition .owl-stage {
-  @apply flex justify-between items-center gap-10 md:gap-[70px];
+  @apply flex justify-between items-center gap-10 lg:gap-[70px];
 }
 
 button {

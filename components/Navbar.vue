@@ -12,7 +12,7 @@
       />
 
       <!-- menu -->
-      <ul class="hidden md:flex items-center gap-9 font-medium">
+      <ul class="hidden lg:flex items-center gap-9 font-medium">
         <!-- menus -->
         <li v-for="item in menus" :key="item.title" class="hover:opacity-70">
           <NuxtLink :to="item.path">

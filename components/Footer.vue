@@ -1,7 +1,7 @@
 <template>
   <footer class="container m-auto mb-20">
     <!-- top -->
-    <div class="grid md:grid-cols-2">
+    <div class="grid lg:grid-cols-2">
       <!-- right -->
       <div>
         <!-- logo start -->
@@ -37,7 +37,7 @@
       </div>
 
       <!-- left -->
-      <div class="mt-3 md:mt-12">
+      <div class="mt-3 lg:mt-12">
         <div class="grid grid-cols-2 mb-6 font-medium opacity-70">
           <span>Tautan Cepat</span>
           <span>KiriminAja</span>
@@ -58,8 +58,8 @@
     </div>
 
     <!-- copy right and social media -->
-    <div class="mt-14 grid gap-3 md:flex justify-between">
-      <p class="text-gray-500 hidden md:block">
+    <div class="mt-14 grid gap-3 lg:flex justify-between">
+      <p class="text-gray-500 hidden lg:block">
         Copyright © 2022
         <span class="font-medium text-gray-700">KiriminAja.com</span> . All
         rights reserved.
@@ -75,15 +75,19 @@
           :alt="item"
         />
         <div class="flex">
-          <button class="px-8 py-px rounded-full bg-gray-200">Light</button>
-          <button class="-ml-4 px-8 py-px rounded-full bg-primary text-white">
+          <span class="px-8 py-px rounded-full bg-gray-200 inline-block"
+            >Light</span
+          >
+          <span
+            class="-ml-4 px-8 py-px rounded-full bg-primary text-white inline-block"
+          >
             Dark
-          </button>
+          </span>
         </div>
       </div>
 
       <!-- copy right text on mobile -->
-      <p class="text-gray-500 md:hidden">
+      <p class="text-gray-500 lg:hidden">
         Copyright © 2022
         <span class="font-medium text-gray-700">KiriminAja.com</span> . All
         rights reserved.

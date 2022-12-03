@@ -8,7 +8,7 @@
       :type="type"
       :name="id"
       :id="id"
-      class="block focus:mt-2 w-full duration-300 focus:border outline-none focus:outline-none rounded-md border-gray-300 focus:px-3 py-2 focus:ring-0 sm:text-sm"
+      class="block bg-transparent focus:mt-2 w-full duration-300 focus:border outline-none focus:outline-none rounded-md border-gray-300 focus:px-3 py-2 focus:ring-0 sm:text-sm"
       :placeholder="placeholder"
     />
   </div>

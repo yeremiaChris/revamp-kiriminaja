@@ -27,7 +27,12 @@ export default {
   buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["@nuxtjs/axios"],
+
+  axios: {
+    baseURL: process.env.API_BASE_URL,
+    withCredentials: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

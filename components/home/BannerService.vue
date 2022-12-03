@@ -6,24 +6,24 @@
 
     <!-- banner -->
     <div
-      class="text-left md:px-4 mt-14 gap-5 grid grid-cols-1 md:grid-cols-7 items-start"
+      class="text-left lg:px-4 mt-14 gap-5 grid grid-cols-1 lg:grid-cols-7 items-start"
     >
       <!-- banner image -->
       <img
-        class="md:col-span-4 hover-animate"
+        class="lg:col-span-4 hover-animate"
         src="https://kiriminaja.com/assets/banner-home-2.png"
         alt="banner-home-2"
       />
 
       <!-- banner content -->
-      <div class="md:col-span-3 gap-3 flex flex-col h-full justify-between">
+      <div class="lg:col-span-3 gap-3 flex flex-col h-full justify-between">
         <div
           v-for="service in services"
           :key="service"
-          class="border-2 rounded-lg px-4 py-3 md:mr-10 md:flex items-center gap-4 hover-animate"
+          class="border-2 rounded-lg px-4 py-3 lg:mr-10 lg:flex items-center gap-4 hover-animate"
         >
           <MiscCheckList />
-          <p class="mt-3 md:mt-0">{{ service }}</p>
+          <p class="mt-3 lg:mt-0">{{ service }}</p>
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 <template>
   <section class="mt-5 shadow border py-6 px-5 text-sm">
-    <form class="flex flex-col md:flex-row md:items-center gap-2 flex-wrap">
+    <form class="flex flex-col lg:flex-row lg:items-center gap-2 flex-wrap">
       <div
         v-for="(field, index) in fields"
         :key="field.tilte + index"
         class="flex-1"
-        :class="{ 'md:border-l md:pl-5': index > 0 }"
+        :class="{ 'lg:border-l lg:pl-5': index > 0 }"
       >
         <FormInput
           :label="field.title"
@@ -16,10 +16,10 @@
       </div>
       <button
         type="submit"
-        class="bg-primary text-white flex items-center gap-2 md:ml-4 md:h-12 rounded-lg md:rounded px-4 md:px-2.5 py-2.5"
+        class="bg-primary text-white flex items-center gap-2 lg:ml-4 lg:h-12 rounded-lg lg:rounded px-4 lg:px-2.5 py-2.5"
       >
         <img src="/icon/search.svg" class="w-7" alt="search" />
-        <p class="md:hidden">Cek Tarif</p>
+        <p class="lg:hidden">Cek Tarif</p>
       </button>
     </form>
   </section>
