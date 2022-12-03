@@ -10,7 +10,7 @@
     >
       <!-- banner image -->
       <img
-        class="md:col-span-4"
+        class="md:col-span-4 hover-animate"
         src="https://kiriminaja.com/assets/banner-home-2.png"
         alt="banner-home-2"
       />
@@ -20,7 +20,7 @@
         <div
           v-for="service in services"
           :key="service"
-          class="border-2 rounded-lg px-4 py-3 md:mr-10 md:flex items-center gap-4"
+          class="border-2 rounded-lg px-4 py-3 md:mr-10 md:flex items-center gap-4 hover-animate"
         >
           <MiscCheckList />
           <p class="mt-3 md:mt-0">{{ service }}</p>
