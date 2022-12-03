@@ -29,7 +29,7 @@
         <li>
           <NuxtLink
             to="#"
-            class="py-3 px-5 bg-[#6f2fab] rounded-full hover:bg-[#5E2891] text-white"
+            class="py-3 px-5 bg-primary rounded-full hover:bg-[#5E2891] text-white"
             >Masuk</NuxtLink
           >
         </li>
