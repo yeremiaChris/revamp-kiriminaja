@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container m-auto">
     <!-- carousel -->
     <HomeCarousel />
 
@@ -19,7 +19,7 @@
     <HomeBannerService />
 
     <!-- download section-->
-    <HomeDownload />
+    <MiscDownload />
   </div>
 </template>
 

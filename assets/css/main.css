@@ -93,3 +93,7 @@ button {
 .hover-animate {
   @apply duration-300 transform hover:-translate-y-3;
 }
+
+.btn-primary {
+  @apply py-3 px-5 bg-primary rounded-full hover:bg-[#5E2891] text-white;
+}

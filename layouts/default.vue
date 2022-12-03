@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <Nuxt class="container m-auto" />
+    <Nuxt />
     <Footer />
 
     <!-- back ground gradient purple just for index page -->

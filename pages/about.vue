@@ -3,8 +3,19 @@
     <!-- banner that contain title, desc and our teams image -->
     <AboutBanner />
 
-    <!-- our team -->
+    <!-- our mission -->
     <AboutOurMission />
+
+    <!-- our teams -->
+    <AboutOurTeams />
+
+    <!-- link to career -->
+    <AboutCareer />
+
+    <!-- download section-->
+    <div class="container m-auto">
+      <MiscDownload />
+    </div>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-10 mt-20 text-center">
+  <div class="mb-10 mt-20 text-center container m-auto">
     <div class="mx-36">
       <h1 class="text-[3.15rem] font-medium mb-5 leading-[3.4rem]">
         <span class="text-primary">Memberi solusi teknologi</span> untuk
