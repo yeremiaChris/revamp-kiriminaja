@@ -32,6 +32,7 @@ export default {
       options: {
         items: 1,
       },
+      data: [],
     };
   },
 
@@ -42,7 +43,9 @@ export default {
   },
 
   async fetch() {
-    await this.$store.dispatch("home/fetchCarouselData");
+    const { data } = await this.$axios.get(`/posts`);
+    this.data = data;
+    // await this.$store.dispatch("home/fetchCarouselData");
   },
 };
 </script>
