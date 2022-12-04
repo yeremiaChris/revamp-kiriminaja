@@ -1,11 +1,10 @@
 <template>
   <header>
-    {{ data }}
     <client-only placeholder="Setup the carousel...">
       <Carousel :items="1" :nav="false" :autoplay="true">
         <div
           class="mt-10 lg:mt-16 lg:px-14 gap-10 grid lg:grid-cols-2 items-center"
-          v-for="(item, index) in data"
+          v-for="(item, index) in data || dummData"
           :key="item.title + index"
         >
           <!-- image -->
@@ -32,20 +31,31 @@ export default {
       options: {
         items: 1,
       },
-      data: [],
+      dummData: [
+        {
+          title: "November Rain? November Yang Asli Untung Bener!",
+          body: "Cuman kirim paket bisa dapetin Sepeda atau SmartTV, affah iyah? Iyah, SahabatKA! Mau kan? Nah, makanya yuk tingkatkan pengirimanmu di November ini!",
+        },
+        {
+          title: "Ninja Xpress telah hadir di aplikasi KiriminAja.",
+          body: "SahabatKA, ada yang baru nih di KiriminAja! Mulai hari ini layanan pengiriman paket Ninja Xpress hadir di aplikasi KiriminAja.",
+        },
+        {
+          title: "Gebyar Pesta Pora KiriminAja, Kirim Dapet Cuan",
+          body: "Cara cerdas KIRIM PAKET pakai KiriminAja banyak diskon dan dapatkan peluang bawa pulang hadiahnya. Yuk buruan daftar dan kirim paketmu sekarang!",
+        },
+      ],
     };
   },
 
-  // computed: {
-  //   ...mapGetters({
-  //     data: "home/getCarouselData",
-  //   }),
-  // },
+  computed: {
+    ...mapGetters({
+      data: "home/getCarouselData",
+    }),
+  },
 
   async fetch() {
-    const { data } = await this.$axios.get(`/posts`);
-    this.data = data;
-    // await this.$store.dispatch("home/fetchCarouselData");
+    await this.$store.dispatch("home/fetchCarouselData");
   },
 };
 </script>
