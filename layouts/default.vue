@@ -14,7 +14,7 @@ export default {
   mounted() {
     const html = document.documentElement;
     const theme = localStorage.theme;
-    this.$store.dispatch("setTheme", theme);
+    this.$store.dispatch("setTheme", theme || "Light");
     if (theme === "Dark") {
       html.classList.add("dark");
     } else {
