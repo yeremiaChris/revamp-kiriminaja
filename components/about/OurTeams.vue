@@ -16,7 +16,9 @@
           "
           :alt="teamsData.length ? item.title : index"
         />
-        <h2 class="mt-3 font-bold text-lg">{{ item.title }}</h2>
+        <h2 class="mt-3 font-bold text-lg">
+          {{ item.title || "Budi Satria Isman" }}
+        </h2>
         <p>President Commisioner</p>
       </div>
     </div>
