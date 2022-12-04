@@ -6,8 +6,7 @@ export default {
       commit("GET_CAROUSEL_DATA", data.slice(0, 3));
     } catch (error) {
       throw new Error(error);
-    } finally {
-      commit("SET_LOADING", false);
     }
+    commit("SET_LOADING", false);
   },
 };
