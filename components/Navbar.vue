@@ -44,11 +44,11 @@ export default {
 
       menus: [
         {
-          title: "Beranda",
+          title: "Home",
           path: "/",
         },
         {
-          title: "Kabar",
+          title: "About",
           path: "/about",
         },
       ],

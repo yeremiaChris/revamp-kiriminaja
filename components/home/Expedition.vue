@@ -55,12 +55,12 @@ export default {
   },
 
   async fetch() {
-    await this.$store.dispatch("expedition/fetchExpeditionData");
+    await this.$store.dispatch("home/fetchExpeditionData");
   },
 
   computed: {
     ...mapGetters({
-      data: "expedition/getExpeditionData",
+      data: "home/getExpeditionData",
     }),
   },
 };
