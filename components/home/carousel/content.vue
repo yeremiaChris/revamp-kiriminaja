@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col gap-3 lg:items-start text-justify lg:text-left">
+  <div
+    class="flex flex-col gap-3 lg:items-start dark:text-white text-justify lg:text-left"
+  >
     <span
-      class="px-3 py-2 text-secondary rounded-full bg-secondary-opacity self-start"
+      class="px-3 py-2 text-secondary rounded-full bg-secondary-opacity dark:border self-start"
       >#{{ number + 1 }} Info</span
     >
     <h2 class="text-[2.55rem] font-bold">

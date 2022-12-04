@@ -9,15 +9,10 @@
         >
           <!-- image -->
           <img
-            class="rounded-lg w-[400px] shadow-lg"
+            class="rounded-lg w-[400px] shadow-lg transition-all duration-300 ease-in transform hover:-translate-y-8"
             :src="`https://picsum.photos/id/${index + 10}/600/600`"
             alt="image"
           />
-          <!-- <img
-            class="rounded-lg w-[400px]"
-            src="https://kiriminaja.com/storage/Slider/November22/1669004316_1668074906_slider november (1).png"
-            alt="image"
-          /> -->
 
           <!-- content -->
           <HomeCarouselContent :number="index" :item="item" />

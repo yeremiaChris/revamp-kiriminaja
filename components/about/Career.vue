@@ -1,5 +1,5 @@
 <template>
-  <div class="my-20 bg-[#F8F9FA]">
+  <div class="my-20 bg-[#F8F9FA] dark:bg-gray-800">
     <div class="container m-auto py-24 grid lg:grid-cols-2">
       <div class="flex flex-col gap-4">
         <h2 class="text-4xl font-bold">

@@ -1,7 +1,7 @@
 <template>
   <nav
     class="sticky top-0 z-50 duration-300"
-    :class="{ 'shadow-lg bg-white': isScroll }"
+    :class="{ 'shadow-lg bg-white dark:bg-[#121212]': isScroll }"
   >
     <div class="container m-auto box-between py-5">
       <!-- logo -->
@@ -14,7 +14,7 @@
       </NuxtLink>
 
       <!-- menu -->
-      <ul class="hidden lg:flex items-center gap-9 font-medium">
+      <ul class="hidden lg:flex items-center gap-9 font-medium dark:text-white">
         <!-- menus -->
         <li v-for="item in menus" :key="item.title" class="hover:opacity-70">
           <NuxtLink :to="item.path">
@@ -27,28 +27,10 @@
           <div class="w-[2px] bg-black h-7" />
         </li>
 
-        <li class="flex">
-          <span class="px-8 py-px rounded-full bg-gray-200 inline-block"
-            >Light</span
-          >
-          <span
-            class="-ml-4 px-8 py-px rounded-full bg-primary text-white inline-block"
-          >
-            Dark
-          </span>
-        </li>
-
-        <!-- action -->
-        <!-- <li>
-          <NuxtLink to="#">Daftar</NuxtLink>
-        </li>
         <li>
-          <NuxtLink
-            to="#"
-            class="py-3 px-5 bg-primary rounded-full hover:bg-[#5E2891] text-white"
-            >Masuk</NuxtLink
-          >
-        </li> -->
+          <!-- toggle mode  -->
+          <MiscModeButton />
+        </li>
       </ul>
     </div>
   </nav>
@@ -59,6 +41,7 @@ export default {
   data() {
     return {
       isScroll: false,
+
       menus: [
         {
           title: "Beranda",

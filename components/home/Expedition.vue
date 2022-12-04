@@ -3,7 +3,7 @@
     <client-only placeholder="Setup the carousel...">
       <Carousel class="expedition" :responsive="responsive">
         <img
-          class="hover-animate"
+          class="hover-animate dark:grayscale dark:hover:grayscale-0 cursor-pointer"
           v-for="item in list"
           :key="item"
           :src="`https://kiriminaja.com/assets/logistics/${item}.png`"

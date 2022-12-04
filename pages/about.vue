@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark:text-white">
     <!-- banner that contain title, desc and our teams image -->
     <AboutBanner />
 

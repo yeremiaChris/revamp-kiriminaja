@@ -1,5 +1,5 @@
 <template>
-  <footer class="container m-auto mb-20">
+  <footer class="container m-auto mb-20 dark:text-white">
     <!-- top -->
     <div class="grid lg:grid-cols-2">
       <!-- right -->
@@ -10,7 +10,9 @@
           alt="logo"
           width="145px"
         />
-        <h2 class="font-bold text-sm mt-3 opacity-50">
+        <h2
+          class="font-bold text-sm mt-3 dark:text-primary opacity-50 dark:opacity-100"
+        >
           PT. Selalu Siap Solusi
         </h2>
         <!-- logo end -->
@@ -19,7 +21,11 @@
         <div class="mt-5 grid gap-3 opacity-50">
           <div v-for="item in profiles" :key="item.name">
             <div class="flex items-start gap-3">
-              <img :src="`/icon/${item.name}.svg`" :alt="item.name" />
+              <img
+                class="dark:grayscale"
+                :src="`/icon/${item.name}.svg`"
+                :alt="item.name"
+              />
               <p v-if="item.name === 'address'" v-html="item.value" />
               <a v-else :href="item.link">
                 {{ item.value }}
@@ -30,7 +36,7 @@
 
         <p class="mt-5 mb-2 opacity-50 font-medium">Terdaftar di</p>
         <img
-          class="h-[30px]"
+          class="h-[30px] dark:grayscale"
           src="https://kiriminaja.com/assets/home-2/logo-kominfo.svg"
           alt="kominfo"
         />
@@ -38,7 +44,9 @@
 
       <!-- left -->
       <div class="mt-3 lg:mt-12">
-        <div class="grid grid-cols-2 mb-6 font-medium opacity-70">
+        <div
+          class="grid grid-cols-2 mb-6 font-medium opacity-70 dark:opacity-100 dark:text-primary"
+        >
           <span>Tautan Cepat</span>
           <span>KiriminAja</span>
         </div>
@@ -49,7 +57,7 @@
             </a>
             <span
               v-if="item.title === 'Karir'"
-              class="rounded-full px-3 py-1 text-xs bg-primary-opacity text-primary"
+              class="rounded-full px-3 py-1 text-xs bg-primary-opacity text-primary dark:border"
               >We're Hiring</span
             >
           </li>
@@ -58,7 +66,7 @@
     </div>
 
     <!-- copy right and social media -->
-    <div class="mt-14 grid gap-3 lg:flex justify-between">
+    <div class="mt-14 grid gap-3 lg:flex justify-between dark:text-white">
       <p class="text-gray-500 hidden lg:block">
         Copyright © 2022
         <span class="font-medium text-gray-700">KiriminAja.com</span> . All
@@ -68,22 +76,13 @@
       <!-- social media icon  -->
       <div class="flex flex-wrap gap-4">
         <img
-          class="opacity-50"
+          class="opacity-50 dark:grayscale"
           v-for="item in socialMedia"
           :key="item"
           :src="`/icon/social/${item}.svg`"
           :alt="item"
         />
-        <div class="flex">
-          <span class="px-8 py-px rounded-full bg-gray-200 inline-block"
-            >Light</span
-          >
-          <span
-            class="-ml-4 px-8 py-px rounded-full bg-primary text-white inline-block"
-          >
-            Dark
-          </span>
-        </div>
+        <MiscModeButton />
       </div>
 
       <!-- copy right text on mobile -->

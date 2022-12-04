@@ -4,7 +4,7 @@
   >
     <!-- icon -->
     <div
-      class="px-4 py-4 bg-primary-opacity box-center d-inline-flex rounded-full"
+      class="px-4 py-4 bg-primary-opacity dark:border box-center d-inline-flex rounded-full"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

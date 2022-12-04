@@ -1,9 +1,11 @@
 <template>
-  <section class="mt-5 shadow border py-6 px-5 text-sm">
+  <section
+    class="mt-5 shadow border dark:border-0 dark:bg-gray-800 rounded-lg dark:text-white py-6 px-5 text-sm"
+  >
     <form class="flex flex-col lg:flex-row lg:items-center gap-2 flex-wrap">
       <div
         v-for="(field, index) in fields"
-        :key="field.tilte + index"
+        :key="field.title + index"
         class="flex-1"
         :class="{ 'lg:border-l lg:pl-5': index > 0 }"
       >

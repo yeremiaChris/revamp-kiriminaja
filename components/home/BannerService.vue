@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-10 text-center">
+  <section class="mb-10 text-center dark:text-white">
     <!-- title and description -->
     <h2 class="mb-3 text-3xl font-medium">Kirim Paket Makin Singkat</h2>
     <p>Masih kurang? Yuk explore sekarang biar ngga penasaran</p>
@@ -16,7 +16,9 @@
       />
 
       <!-- banner content -->
-      <div class="lg:col-span-3 gap-3 flex flex-col h-full justify-between">
+      <div
+        class="lg:col-span-3 gap-3 flex flex-col h-full justify-between dark:text-white"
+      >
         <div
           v-for="service in services"
           :key="service"

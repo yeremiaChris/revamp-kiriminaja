@@ -1,5 +1,5 @@
 <template>
-  <section class="my-20">
+  <section class="my-20 dark:text-white">
     <!-- title -->
     <h2 class="text-center mb-14 text-3xl font-medium">
       Untuk Semua Kebutuhan Pengiriman Paketmu
