@@ -1,5 +1,6 @@
 <template>
   <header>
+    {{ data }}
     <client-only placeholder="Setup the carousel...">
       <Carousel :items="1" :nav="false" :autoplay="true">
         <div
