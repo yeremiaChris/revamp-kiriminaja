@@ -4,7 +4,7 @@
       <Carousel :items="1" :nav="false" :autoplay="true">
         <div
           class="mt-10 lg:mt-16 lg:px-14 gap-10 grid lg:grid-cols-2 items-center"
-          v-for="(item, index) in data || dummData"
+          v-for="(item, index) in data ?? dummData"
           :key="item.title + index"
         >
           <!-- image -->
