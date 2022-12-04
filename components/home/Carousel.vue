@@ -36,11 +36,11 @@ export default {
     };
   },
 
-  computed: {
-    ...mapGetters({
-      data: "home/getCarouselData",
-    }),
-  },
+  // computed: {
+  //   ...mapGetters({
+  //     data: "home/getCarouselData",
+  //   }),
+  // },
 
   async fetch() {
     const { data } = await this.$axios.get(`/posts`);
