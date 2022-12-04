@@ -4,22 +4,30 @@
   >
     <span
       class="px-3 py-2 text-secondary rounded-full bg-secondary-opacity dark:border self-start"
+      :class="{ 'bg-slate-200 text-slate-200': isLoading }"
       >#{{ number + 1 }} Info</span
     >
-    <h2 class="text-[2.55rem] font-bold">
+    <h2
+      class="text-[2.55rem] font-bold"
+      :class="{ 'bg-slate-200 text-slate-200': isLoading }"
+    >
       {{ item.title.slice(0, 40) || "-" }}
     </h2>
-    <p class="text-xl">
+    <p class="text-xl" :class="{ 'bg-slate-200 text-slate-200': isLoading }">
       {{ item.body || "-" }}
     </p>
-    <ul class="grid gap-4 font-medium">
+    <ul
+      class="grid gap-4 font-medium"
+      :class="{ 'bg-slate-200 text-slate-200': isLoading }"
+    >
       <li v-for="item in 3" :key="item" class="flex items-center gap-2">
-        <MiscCheckList />
+        <MiscCheckList :class="{ 'bg-slate-200 text-slate-200': isLoading }" />
         Tanpa Biaya Pendaftaran
       </li>
     </ul>
     <button
       class="bg-primary rounded-full mt-6 lg:mt-0 px-8 text-lg py-3 text-white font-medium"
+      :class="{ 'bg-slate-200 text-slate-200': isLoading }"
     >
       Selengkapnya
     </button>
@@ -27,6 +35,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: {
     number: {
@@ -37,6 +47,12 @@ export default {
       type: Object,
       required: true,
     },
+  },
+
+  computed: {
+    ...mapGetters({
+      isLoading: "home/getIsLoading",
+    }),
   },
 };
 </script>
