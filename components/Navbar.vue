@@ -33,8 +33,8 @@
         </li>
       </ul>
 
-      <button @click="showHumburgerMenu">
-        <img class="lg:hidden w-10" src="/icon/humburger.svg" alt="humburger" />
+      <button @click="showHumburgerMenu" class="lg:absolute lg:hidden">
+        <img class="w-10" src="/icon/humburger.svg" alt="humburger" />
       </button>
     </div>
 
