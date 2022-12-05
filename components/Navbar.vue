@@ -52,7 +52,7 @@
 
       <!-- navbar on mobile -->
       <ul
-        class="absolute top-20 left-0 right-0 z-10 bg-gray-300 dark:bg-gray-500 md:hidden dark:text-white rounded-lg transition-all duration-300 ease-in-out"
+        class="absolute top-20 left-10 right-10 z-10 bg-gray-300 dark:bg-gray-500 md:hidden dark:text-white rounded-lg transition-all duration-300 ease-in-out"
         :class="{
           'opacity-100': isHumburgerMenu,
           'opacity-0': !isHumburgerMenu,
@@ -61,13 +61,13 @@
         <li v-for="(item, index) in menus" :key="item.title + index">
           <NuxtLink
             :to="item.path"
-            class="hover:bg-gray-200 px-10 py-4 border inline-block w-full hover:text-gray-800"
+            class="hover:bg-gray-200 px-5 py-4 border inline-block w-full hover:text-gray-800"
           >
             {{ item.title }}
           </NuxtLink>
         </li>
 
-        <li class="px-10 py-4 border hover:bg-gray-200 hover:text-gray-800">
+        <li class="px-5 py-4 border hover:bg-gray-200 hover:text-gray-800">
           <!-- toggle mode  -->
           <MiscModeButton />
         </li>
