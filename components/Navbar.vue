@@ -1,11 +1,12 @@
 <template>
   <nav
+    v-click-outside="close"
     class="sticky top-0 z-50 duration-300"
     :class="{ 'shadow-lg bg-white dark:bg-[#121212]': isScroll }"
   >
     <div class="container m-auto box-between py-5">
       <!-- logo -->
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="z-20 inline-block">
         <img
           src="https://kiriminaja.com/assets/atrust/svg-logo-primary.svg"
           alt="logo"
@@ -14,7 +15,9 @@
       </NuxtLink>
 
       <!-- menu -->
-      <ul class="hidden lg:flex items-center gap-9 font-medium dark:text-white">
+      <ul
+        class="hidden lg:flex items-center gap-9 font-medium dark:text-white z-20"
+      >
         <!-- menus -->
         <li v-for="item in menus" :key="item.title" class="hover:opacity-70">
           <NuxtLink :to="item.path">
@@ -33,20 +36,32 @@
         </li>
       </ul>
 
-      <button @click="showHumburgerMenu" class="lg:absolute lg:hidden">
-        <img class="w-10" src="/icon/humburger.svg" alt="humburger" />
+      <button
+        v-click-outside="close"
+        @click="showHumburgerMenu"
+        class="lg:absolute lg:hidden z-20"
+      >
+        <img
+          class="w-10"
+          :src="`/icon/${
+            mode === 'Light' ? 'humburger' : 'humburger-white'
+          }.svg`"
+          alt="humburger"
+        />
       </button>
+      <!-- navbar on mobile -->
     </div>
-
-    <!-- navbar on mobile -->
     <ul
-      class="absolute bg-gray-100 left-8 right-8 rounded-lg transition-all duration-300 ease-in-out"
-      :class="{ 'opacity-100': isHumburgerMenu, 'opacity-0': !isHumburgerMenu }"
+      class="absolute z-10 bg-gray-100 dark:bg-gray-500 dark:text-white left-0 right-0 rounded-lg transition-all duration-300 ease-in-out"
+      :class="{
+        'opacity-100': isHumburgerMenu,
+        'opacity-0': !isHumburgerMenu,
+      }"
     >
       <li v-for="(item, index) in menus" :key="item.title">
         <NuxtLink
           :to="item.path"
-          class="hover:bg-gray-200 px-5 py-3 border inline-block w-full"
+          class="hover:bg-gray-200 px-10 py-3 border inline-block w-full hover:text-gray-800"
           :class="{
             'rounded-t': index === 0,
           }"
@@ -55,7 +70,9 @@
         </NuxtLink>
       </li>
 
-      <li class="px-5 py-3 border rounded-b hover:bg-gray-200">
+      <li
+        class="px-10 py-3 border rounded-b hover:bg-gray-200 hover:text-gray-800"
+      >
         <!-- toggle mode  -->
         <MiscModeButton />
       </li>
@@ -64,6 +81,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
@@ -83,6 +102,12 @@ export default {
     };
   },
 
+  computed: {
+    ...mapGetters({
+      mode: "getTheme",
+    }),
+  },
+
   mounted() {
     // handle onscroll
     window.onscroll = (e) => {
@@ -98,12 +123,9 @@ export default {
     showHumburgerMenu() {
       this.isHumburgerMenu = !this.isHumburgerMenu;
     },
+    close() {
+      this.isHumburgerMenu = false;
+    },
   },
 };
 </script>
-
-<style scoped>
-ul li .nuxt-link-active {
-  /* @apply shadow-2xl shadow-primary-opacity border-b-2; */
-}
-</style>
