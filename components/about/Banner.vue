@@ -14,7 +14,7 @@
       </p>
     </div>
     <img
-      class="w-full rounded-lg"
+      class="w-full rounded-lg hover:scale-110 duration-300"
       src="https://storage.googleapis.com/tprt0ezsggqjornc7nf1wwluvgulhr/team-image.jpg"
       alt="team-image"
     />

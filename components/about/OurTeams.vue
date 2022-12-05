@@ -8,7 +8,7 @@
         :key="index + 'teams-data'"
       >
         <img
-          class="rounded-lg"
+          class="rounded-lg cursor-pointer hover-animate"
           :src="
             teamsData.length
               ? item.url

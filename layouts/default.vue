@@ -12,6 +12,7 @@
 <script>
 export default {
   mounted() {
+    // contition to check theme of the page
     const html = document.documentElement;
     const theme = localStorage.theme;
     this.$store.dispatch("setTheme", theme || "Light");

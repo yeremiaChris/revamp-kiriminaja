@@ -5,7 +5,7 @@
       <li
         v-for="mission in missions"
         :key="mission"
-        class="flex items-center gap-3 border-2 border-primary bg-primary-opacity rounded-lg py-4 pl-4 pr-10"
+        class="flex items-center hover:opacity-50 gap-3 border-2 border-primary bg-primary-opacity rounded-lg py-4 pl-4 pr-10"
       >
         <MiscCheckList />
         <span>

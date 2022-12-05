@@ -49,8 +49,9 @@
           alt="humburger"
         />
       </button>
-      <!-- navbar on mobile -->
     </div>
+
+    <!-- navbar on mobile -->
     <ul
       class="absolute z-10 bg-gray-100 dark:bg-gray-500 dark:text-white left-0 right-0 rounded-lg transition-all duration-300 ease-in-out"
       :class="{
