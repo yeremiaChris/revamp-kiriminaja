@@ -32,7 +32,34 @@
           <MiscModeButton />
         </li>
       </ul>
+
+      <button @click="showHumburgerMenu">
+        <img class="lg:hidden w-10" src="/icon/humburger.svg" alt="humburger" />
+      </button>
     </div>
+
+    <!-- navbar on mobile -->
+    <ul
+      class="absolute bg-gray-100 left-8 right-8 rounded-lg transition-all duration-300 ease-in-out"
+      :class="{ 'opacity-100': isHumburgerMenu, 'opacity-0': !isHumburgerMenu }"
+    >
+      <li v-for="(item, index) in menus" :key="item.title">
+        <NuxtLink
+          :to="item.path"
+          class="hover:bg-gray-200 px-5 py-3 border inline-block w-full"
+          :class="{
+            'rounded-t': index === 0,
+          }"
+        >
+          {{ item.title }}
+        </NuxtLink>
+      </li>
+
+      <li class="px-5 py-3 border rounded-b hover:bg-gray-200">
+        <!-- toggle mode  -->
+        <MiscModeButton />
+      </li>
+    </ul>
   </nav>
 </template>
 
@@ -40,6 +67,7 @@
 export default {
   data() {
     return {
+      isHumburgerMenu: false,
       isScroll: false,
 
       menus: [
@@ -64,6 +92,12 @@ export default {
         this.isScroll = false;
       }
     };
+  },
+
+  methods: {
+    showHumburgerMenu() {
+      this.isHumburgerMenu = !this.isHumburgerMenu;
+    },
   },
 };
 </script>
